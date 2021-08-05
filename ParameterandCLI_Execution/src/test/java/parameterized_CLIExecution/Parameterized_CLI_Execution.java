@@ -20,7 +20,7 @@ public class Parameterized_CLI_Execution {
 	@BeforeMethod
 	public void setup(String browser,String urltotest) {
 		
-		
+		// initialize the browser from the parameter
 		  if(browser.equalsIgnoreCase("chrome")) {
 			  WebDriverManager.chromedriver().setup();
 				driver=new ChromeDriver();		  
